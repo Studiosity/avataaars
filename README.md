@@ -14,7 +14,7 @@ The core React component for [Avataaars Generator](https://getavataaars.com/) de
  - Comes with [official editor](https://getavataaars.com/)
 
 ## Usage
-### Development
+### Eureka Development
 To test locally in eureka clone this repo then in the terminal in eureka directory
 
 ```
