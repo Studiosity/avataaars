@@ -33,18 +33,19 @@ export default class AvatarComponent extends React.Component<Props> {
   static childContextTypes = {
     optionContext: PropTypes.instanceOf(OptionContext)
   }
+
   private optionContext: OptionContext = new OptionContext(allOptions)
 
   getChildContext () {
     return { optionContext: this.optionContext }
   }
 
-  UNSAFE_componentWillMount () {
+  componentDidMount (): void {
     this.updateOptionContext(this.props)
   }
 
-  UNSAFE_componentWillReceiveProps (nextProps: Props) {
-    this.updateOptionContext(nextProps)
+  componentDidUpdate (): void {
+    this.updateOptionContext(this.props)
   }
 
   render () {
@@ -75,12 +76,12 @@ export class Piece extends React.Component<Props> {
     return { optionContext: this.optionContext }
   }
 
-  UNSAFE_componentWillMount () {
+  componentDidMount (): void {
     this.updateOptionContext(this.props)
   }
 
-  UNSAFE_componentWillReceiveProps (nextProps: Props) {
-    this.updateOptionContext(nextProps)
+  componentDidUpdate (): void {
+    this.updateOptionContext(this.props)
   }
 
   render () {
