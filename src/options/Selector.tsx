@@ -26,7 +26,7 @@ export default class Selector extends React.Component<Props> {
     return this.context.optionContext
   }
 
-  componentWillMount() {
+  componentDidMount(): void {
     const { option, defaultOption } = this.props
     const { optionContext } = this
     const defaultValue = (
@@ -42,8 +42,8 @@ export default class Selector extends React.Component<Props> {
     }
   }
 
-  componentWillUpdate(nextProps: Props & { children?: React.ReactNode }) {
-    this.updateOptionValues(nextProps)
+  componentDidUpdate(): void {
+    this.updateOptionValues(this.props)
   }
 
   componentWillUnmount() {
