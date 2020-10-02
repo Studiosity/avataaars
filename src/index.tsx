@@ -40,7 +40,7 @@ export default class AvatarComponent extends React.Component<Props> {
     return { optionContext: this.optionContext }
   }
 
-  componentDidMount (): void {
+  UNSAFE_componentWillMount (): void {
     this.updateOptionContext(this.props)
   }
 
@@ -76,7 +76,7 @@ export class Piece extends React.Component<Props> {
     return { optionContext: this.optionContext }
   }
 
-  componentDidMount (): void {
+  UNSAFE_componentWillMount (): void {
     this.updateOptionContext(this.props)
   }
 
