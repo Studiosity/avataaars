@@ -46,13 +46,13 @@ var ShortHairShortWaved_1 = require("./ShortHairShortWaved");
 var ShortHairSides_1 = require("./ShortHairSides");
 var ShortHairTheCaesar_1 = require("./ShortHairTheCaesar");
 var ShortHairTheCaesarSidePart_1 = require("./ShortHairTheCaesarSidePart");
+var StudiosityTutorHat_1 = require("./StudiosityTutorHat");
 var Turban_1 = require("./Turban");
 var WinterHat1_1 = require("./WinterHat1");
 var WinterHat2_1 = require("./WinterHat2");
 var WinterHat3_1 = require("./WinterHat3");
 var WinterHat4_1 = require("./WinterHat4");
 var options_1 = require("../../options");
-var StudiosityTutorHat_1 = require("./StudiosityTutorHat");
 var Top = /** @class */ (function (_super) {
     __extends(Top, _super);
     function Top() {

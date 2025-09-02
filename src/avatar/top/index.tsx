@@ -30,13 +30,13 @@ import ShortHairShortWaved from './ShortHairShortWaved'
 import ShortHairSides from './ShortHairSides'
 import ShortHairTheCaesar from './ShortHairTheCaesar'
 import ShortHairTheCaesarSidePart from './ShortHairTheCaesarSidePart'
+import StudiosityTutorHat from './StudiosityTutorHat'
 import Turban from './Turban'
 import WinterHat1 from './WinterHat1'
 import WinterHat2 from './WinterHat2'
 import WinterHat3 from './WinterHat3'
 import WinterHat4 from './WinterHat4'
 import { Selector, TopOption } from '../../options'
-import StudiosityTutorHat from './StudiosityTutorHat'
 
 export default class Top extends React.Component {
   render() {

@@ -28,7 +28,7 @@ var AvatarStyle;
     AvatarStyle["Circle"] = "Circle";
     AvatarStyle["Tutor"] = "Tutor";
     AvatarStyle["Transparent"] = "Transparent";
-})(AvatarStyle = exports.AvatarStyle || (exports.AvatarStyle = {}));
+})(AvatarStyle || (exports.AvatarStyle = AvatarStyle = {}));
 var Avatar = /** @class */ (function (_super) {
     __extends(Avatar, _super);
     function Avatar() {

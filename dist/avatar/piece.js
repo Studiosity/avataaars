@@ -32,7 +32,7 @@ var AvatarStyle;
     AvatarStyle["Circle"] = "Circle";
     AvatarStyle["Tutor"] = "Tutor";
     AvatarStyle["Transparent"] = "Transparent";
-})(AvatarStyle = exports.AvatarStyle || (exports.AvatarStyle = {}));
+})(AvatarStyle || (exports.AvatarStyle = AvatarStyle = {}));
 var PieceComponent = /** @class */ (function (_super) {
     __extends(PieceComponent, _super);
     function PieceComponent() {
