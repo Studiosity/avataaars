@@ -1,5 +1,5 @@
 import * as React from 'react';
-export default class ShortHairShaggy extends React.Component {
+export default class ShortHairShaggy extends React.Component<React.PropsWithChildren> {
     static optionValue: string;
     private filter1;
     private mask1;

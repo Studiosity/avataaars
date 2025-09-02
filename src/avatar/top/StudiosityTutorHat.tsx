@@ -1,7 +1,7 @@
 import * as React from 'react'
 import FacialHair from './facialHair'
 
-export default class StudiosityTutorHat extends React.Component {
+export default class StudiosityTutorHat extends React.Component<React.PropsWithChildren> {
   static optionValue = 'StudiosityTutorHat'
 
   render() {
