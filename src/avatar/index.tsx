@@ -9,6 +9,7 @@ import Top from './top'
 
 export enum AvatarStyle {
   Circle = 'Circle',
+  Tutor = 'Tutor',
   Transparent = 'Transparent',
 }
 
@@ -29,7 +30,7 @@ export default class Avatar extends React.Component<Props> {
   render() {
     const { path1, path2, path3, mask1, mask2, mask3 } = this
     const { avatarStyle } = this.props
-    const circle = avatarStyle === AvatarStyle.Circle
+    const circle = avatarStyle === AvatarStyle.Circle || avatarStyle === AvatarStyle.Tutor
     return (
       <svg
         style={this.props.style}
@@ -79,7 +80,7 @@ export default class Avatar extends React.Component<Props> {
                   <g
                     id="Color/Palette/Blue-01"
                     mask={'url(#' + mask1 + ')'}
-                    fill="#65C9FF">
+                    fill={avatarStyle === AvatarStyle.Tutor ? '#E0E253' : '#65C9FF'}>
                     <rect id="🖍Color" x="0" y="0" width="240" height="240" />
                   </g>
                 </g>

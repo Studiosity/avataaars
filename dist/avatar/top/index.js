@@ -52,6 +52,7 @@ var WinterHat2_1 = require("./WinterHat2");
 var WinterHat3_1 = require("./WinterHat3");
 var WinterHat4_1 = require("./WinterHat4");
 var options_1 = require("../../options");
+var StudiosityTutorHat_1 = require("./StudiosityTutorHat");
 var Top = /** @class */ (function (_super) {
     __extends(Top, _super);
     function Top() {
@@ -94,7 +95,8 @@ var Top = /** @class */ (function (_super) {
             React.createElement(ShortHairShortWaved_1.default, null, children),
             React.createElement(ShortHairSides_1.default, null, children),
             React.createElement(ShortHairTheCaesar_1.default, null, children),
-            React.createElement(ShortHairTheCaesarSidePart_1.default, null, children)));
+            React.createElement(ShortHairTheCaesarSidePart_1.default, null, children),
+            React.createElement(StudiosityTutorHat_1.default, null, children)));
     };
     return Top;
 }(React.Component));

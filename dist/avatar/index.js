@@ -26,6 +26,7 @@ var top_1 = require("./top");
 var AvatarStyle;
 (function (AvatarStyle) {
     AvatarStyle["Circle"] = "Circle";
+    AvatarStyle["Tutor"] = "Tutor";
     AvatarStyle["Transparent"] = "Transparent";
 })(AvatarStyle = exports.AvatarStyle || (exports.AvatarStyle = {}));
 var Avatar = /** @class */ (function (_super) {
@@ -43,7 +44,7 @@ var Avatar = /** @class */ (function (_super) {
     Avatar.prototype.render = function () {
         var _a = this, path1 = _a.path1, path2 = _a.path2, path3 = _a.path3, mask1 = _a.mask1, mask2 = _a.mask2, mask3 = _a.mask3;
         var avatarStyle = this.props.avatarStyle;
-        var circle = avatarStyle === AvatarStyle.Circle;
+        var circle = avatarStyle === AvatarStyle.Circle || avatarStyle === AvatarStyle.Tutor;
         return (React.createElement("svg", { style: this.props.style, className: this.props.className, width: "264px", height: "280px", viewBox: "0 0 264 280", version: "1.1", xmlns: "http://www.w3.org/2000/svg", xmlnsXlink: "http://www.w3.org/1999/xlink" },
             React.createElement("desc", null, "Created with getavataaars.com"),
             React.createElement("defs", null,
@@ -57,7 +58,7 @@ var Avatar = /** @class */ (function (_super) {
                             React.createElement("mask", { id: mask1, fill: "white" },
                                 React.createElement("use", { xlinkHref: '#' + path1 })),
                             React.createElement("use", { id: "Circle-Background", fill: "#E6E6E6", xlinkHref: '#' + path1 }),
-                            React.createElement("g", { id: "Color/Palette/Blue-01", mask: 'url(#' + mask1 + ')', fill: "#65C9FF" },
+                            React.createElement("g", { id: "Color/Palette/Blue-01", mask: 'url(#' + mask1 + ')', fill: avatarStyle === AvatarStyle.Tutor ? '#E0E253' : '#65C9FF' },
                                 React.createElement("rect", { id: "\uD83D\uDD8DColor", x: "0", y: "0", width: "240", height: "240" })))) : null,
                         circle ? (React.createElement("mask", { id: mask2, fill: "white" },
                             React.createElement("use", { xlinkHref: '#' + path2 }))) : null,

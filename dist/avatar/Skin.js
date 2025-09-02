@@ -35,6 +35,7 @@ function makeColor(name, color) {
     anyComponent.optionValue = name;
     return anyComponent;
 }
+var Grey = makeColor('Grey', '#AFAFAF');
 var Tanned = makeColor('Tanned', '#FD9841');
 var Yellow = makeColor('Yellow', '#F8D25C');
 var Pale = makeColor('Pale', '#FFDBB4');
@@ -48,7 +49,8 @@ var Skin = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     Skin.prototype.render = function () {
-        return (React.createElement(options_1.Selector, { option: options_1.SkinOption, defaultOption: Light },
+        return (React.createElement(options_1.Selector, { option: options_1.SkinOption, defaultOption: Grey },
+            React.createElement(Grey, { maskID: this.props.maskID }),
             React.createElement(Tanned, { maskID: this.props.maskID }),
             React.createElement(Yellow, { maskID: this.props.maskID }),
             React.createElement(Pale, { maskID: this.props.maskID }),
