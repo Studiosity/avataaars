@@ -6,5 +6,5 @@ export default class LongHairStraightStrand extends React.Component<React.PropsW
     private path1;
     private path2;
     private path3;
-    render(): React.JSX.Element;
+    render(): import("react/jsx-runtime").JSX.Element;
 }

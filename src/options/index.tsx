@@ -3,6 +3,7 @@ import Option from './Option'
 export { default as Option } from './Option'
 export { default as OptionContext, OptionContextState } from './OptionContext'
 export { default as Selector } from './Selector'
+export { OptionContextProvider, useOptionContext } from './OptionContextProvider'
 
 export const TopOption = new Option({
   key: 'topType',

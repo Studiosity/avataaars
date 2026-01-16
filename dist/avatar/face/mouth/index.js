@@ -15,6 +15,7 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
+var jsx_runtime_1 = require("react/jsx-runtime");
 var React = require("react");
 var Concerned_1 = require("./Concerned");
 var Default_1 = require("./Default");
@@ -35,19 +36,7 @@ var Mouth = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     Mouth.prototype.render = function () {
-        return (React.createElement(options_1.Selector, { defaultOption: Default_1.default, option: options_1.MouthOption },
-            React.createElement(Concerned_1.default, null),
-            React.createElement(Default_1.default, null),
-            React.createElement(Disbelief_1.default, null),
-            React.createElement(Eating_1.default, null),
-            React.createElement(Grimace_1.default, null),
-            React.createElement(Sad_1.default, null),
-            React.createElement(ScreamOpen_1.default, null),
-            React.createElement(Serious_1.default, null),
-            React.createElement(Smile_1.default, null),
-            React.createElement(Tongue_1.default, null),
-            React.createElement(Twinkle_1.default, null),
-            React.createElement(Vomit_1.default, null)));
+        return ((0, jsx_runtime_1.jsxs)(options_1.Selector, { defaultOption: Default_1.default, option: options_1.MouthOption, children: [(0, jsx_runtime_1.jsx)(Concerned_1.default, {}), (0, jsx_runtime_1.jsx)(Default_1.default, {}), (0, jsx_runtime_1.jsx)(Disbelief_1.default, {}), (0, jsx_runtime_1.jsx)(Eating_1.default, {}), (0, jsx_runtime_1.jsx)(Grimace_1.default, {}), (0, jsx_runtime_1.jsx)(Sad_1.default, {}), (0, jsx_runtime_1.jsx)(ScreamOpen_1.default, {}), (0, jsx_runtime_1.jsx)(Serious_1.default, {}), (0, jsx_runtime_1.jsx)(Smile_1.default, {}), (0, jsx_runtime_1.jsx)(Tongue_1.default, {}), (0, jsx_runtime_1.jsx)(Twinkle_1.default, {}), (0, jsx_runtime_1.jsx)(Vomit_1.default, {})] }));
     };
     return Mouth;
 }(React.Component));

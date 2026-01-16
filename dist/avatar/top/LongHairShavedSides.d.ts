@@ -8,5 +8,5 @@ export default class LongHairShavedSides extends React.Component<React.PropsWith
     private path2;
     private path3;
     private path4;
-    render(): React.JSX.Element;
+    render(): import("react/jsx-runtime").JSX.Element;
 }

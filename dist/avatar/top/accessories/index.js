@@ -15,6 +15,7 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
+var jsx_runtime_1 = require("react/jsx-runtime");
 var React = require("react");
 var Blank_1 = require("./Blank");
 var Kurt_1 = require("./Kurt");
@@ -30,14 +31,7 @@ var Accessories = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     Accessories.prototype.render = function () {
-        return (React.createElement(options_1.Selector, { defaultOption: Blank_1.default, option: options_1.AccessoriesOption },
-            React.createElement(Blank_1.default, null),
-            React.createElement(Kurt_1.default, null),
-            React.createElement(Prescription01_1.default, null),
-            React.createElement(Prescription02_1.default, null),
-            React.createElement(Round_1.default, null),
-            React.createElement(Sunglasses_1.default, null),
-            React.createElement(Wayfarers_1.default, null)));
+        return ((0, jsx_runtime_1.jsxs)(options_1.Selector, { defaultOption: Blank_1.default, option: options_1.AccessoriesOption, children: [(0, jsx_runtime_1.jsx)(Blank_1.default, {}), (0, jsx_runtime_1.jsx)(Kurt_1.default, {}), (0, jsx_runtime_1.jsx)(Prescription01_1.default, {}), (0, jsx_runtime_1.jsx)(Prescription02_1.default, {}), (0, jsx_runtime_1.jsx)(Round_1.default, {}), (0, jsx_runtime_1.jsx)(Sunglasses_1.default, {}), (0, jsx_runtime_1.jsx)(Wayfarers_1.default, {})] }));
     };
     return Accessories;
 }(React.Component));

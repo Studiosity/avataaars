@@ -11,5 +11,5 @@ export default class WinterHat4 extends React.Component<React.PropsWithChildren>
     private path3;
     private path4;
     private path5;
-    render(): React.JSX.Element;
+    render(): import("react/jsx-runtime").JSX.Element;
 }

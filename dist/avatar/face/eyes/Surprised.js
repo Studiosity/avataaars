@@ -15,6 +15,7 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
+var jsx_runtime_1 = require("react/jsx-runtime");
 var React = require("react");
 var Surprised = /** @class */ (function (_super) {
     __extends(Surprised, _super);
@@ -22,11 +23,7 @@ var Surprised = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     Surprised.prototype.render = function () {
-        return (React.createElement("g", { id: 'Eyes/Surprised-\uD83D\uDE33', transform: 'translate(0.000000, 8.000000)' },
-            React.createElement("circle", { id: 'The-White-Stuff', fill: '#FFFFFF', cx: '30', cy: '22', r: '14' }),
-            React.createElement("circle", { id: 'Eye-Ball', fill: '#FFFFFF', cx: '82', cy: '22', r: '14' }),
-            React.createElement("circle", { id: 'Eye', fillOpacity: '0.699999988', fill: '#000000', cx: '30', cy: '22', r: '6' }),
-            React.createElement("circle", { id: 'Eye', fillOpacity: '0.699999988', fill: '#000000', cx: '82', cy: '22', r: '6' })));
+        return ((0, jsx_runtime_1.jsxs)("g", { id: 'Eyes/Surprised-\uD83D\uDE33', transform: 'translate(0.000000, 8.000000)', children: [(0, jsx_runtime_1.jsx)("circle", { id: 'The-White-Stuff', fill: '#FFFFFF', cx: '30', cy: '22', r: '14' }), (0, jsx_runtime_1.jsx)("circle", { id: 'Eye-Ball', fill: '#FFFFFF', cx: '82', cy: '22', r: '14' }), (0, jsx_runtime_1.jsx)("circle", { id: 'Eye', fillOpacity: '0.699999988', fill: '#000000', cx: '30', cy: '22', r: '6' }), (0, jsx_runtime_1.jsx)("circle", { id: 'Eye', fillOpacity: '0.699999988', fill: '#000000', cx: '82', cy: '22', r: '6' })] }));
     };
     Surprised.optionValue = 'Surprised';
     return Surprised;

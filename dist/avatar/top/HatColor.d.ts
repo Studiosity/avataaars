@@ -4,5 +4,5 @@ export interface Props {
     defaultColor?: string;
 }
 export default class Colors extends React.Component<Props> {
-    render(): React.JSX.Element;
+    render(): import("react/jsx-runtime").JSX.Element;
 }

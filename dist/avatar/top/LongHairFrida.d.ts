@@ -11,5 +11,5 @@ export default class LongHairFrida extends React.Component<React.PropsWithChildr
     private mask1;
     private path1;
     private path2;
-    render(): React.JSX.Element;
+    render(): import("react/jsx-runtime").JSX.Element;
 }

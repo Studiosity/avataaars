@@ -6,5 +6,5 @@ export default class Hijab extends React.Component<React.PropsWithChildren> {
     private mask2;
     private path1;
     private path2;
-    render(): React.JSX.Element;
+    render(): import("react/jsx-runtime").JSX.Element;
 }

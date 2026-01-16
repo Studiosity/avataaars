@@ -5,5 +5,5 @@ export default class Squint extends React.Component {
     private path2;
     private mask1;
     private mask2;
-    render(): React.JSX.Element;
+    render(): import("react/jsx-runtime").JSX.Element;
 }

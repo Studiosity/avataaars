@@ -15,6 +15,7 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
+var jsx_runtime_1 = require("react/jsx-runtime");
 var React = require("react");
 var Eyepatch_1 = require("./Eyepatch");
 var Hat_1 = require("./Hat");
@@ -60,43 +61,7 @@ var Top = /** @class */ (function (_super) {
     }
     Top.prototype.render = function () {
         var children = this.props.children;
-        return (React.createElement(options_1.Selector, { defaultOption: LongHairStraight_1.default, option: options_1.TopOption },
-            React.createElement(NoHair_1.default, null, children),
-            React.createElement(Eyepatch_1.default, null, children),
-            React.createElement(Hat_1.default, null, children),
-            React.createElement(Hijab_1.default, null, children),
-            React.createElement(Turban_1.default, null, children),
-            React.createElement(WinterHat1_1.default, null, children),
-            React.createElement(WinterHat2_1.default, null, children),
-            React.createElement(WinterHat3_1.default, null, children),
-            React.createElement(WinterHat4_1.default, null, children),
-            React.createElement(LongHairBigHair_1.default, null, children),
-            React.createElement(LongHairBob_1.default, null, children),
-            React.createElement(LongHairBun_1.default, null, children),
-            React.createElement(LongHairCurly_1.default, null, children),
-            React.createElement(LongHairCurvy_1.default, null, children),
-            React.createElement(LongHairDreads_1.default, null, children),
-            React.createElement(LongHairFrida_1.default, null, children),
-            React.createElement(LongHairFro_1.default, null, children),
-            React.createElement(LongHairFroBand_1.default, null, children),
-            React.createElement(LongHairNotTooLong_1.default, null, children),
-            React.createElement(LongHairShavedSides_1.default, null, children),
-            React.createElement(LongHairMiaWallace_1.default, null, children),
-            React.createElement(LongHairStraight_1.default, null, children),
-            React.createElement(LongHairStraight2_1.default, null, children),
-            React.createElement(LongHairStraightStrand_1.default, null, children),
-            React.createElement(ShortHairDreads01_1.default, null, children),
-            React.createElement(ShortHairDreads02_1.default, null, children),
-            React.createElement(ShortHairFrizzle_1.default, null, children),
-            React.createElement(ShortHairShaggyMullet_1.default, null, children),
-            React.createElement(ShortHairShortCurly_1.default, null, children),
-            React.createElement(ShortHairShortFlat_1.default, null, children),
-            React.createElement(ShortHairShortRound_1.default, null, children),
-            React.createElement(ShortHairShortWaved_1.default, null, children),
-            React.createElement(ShortHairSides_1.default, null, children),
-            React.createElement(ShortHairTheCaesar_1.default, null, children),
-            React.createElement(ShortHairTheCaesarSidePart_1.default, null, children),
-            React.createElement(StudiosityTutorHat_1.default, null, children)));
+        return ((0, jsx_runtime_1.jsxs)(options_1.Selector, { defaultOption: LongHairStraight_1.default, option: options_1.TopOption, children: [(0, jsx_runtime_1.jsx)(NoHair_1.default, { children: children }), (0, jsx_runtime_1.jsx)(Eyepatch_1.default, { children: children }), (0, jsx_runtime_1.jsx)(Hat_1.default, { children: children }), (0, jsx_runtime_1.jsx)(Hijab_1.default, { children: children }), (0, jsx_runtime_1.jsx)(Turban_1.default, { children: children }), (0, jsx_runtime_1.jsx)(WinterHat1_1.default, { children: children }), (0, jsx_runtime_1.jsx)(WinterHat2_1.default, { children: children }), (0, jsx_runtime_1.jsx)(WinterHat3_1.default, { children: children }), (0, jsx_runtime_1.jsx)(WinterHat4_1.default, { children: children }), (0, jsx_runtime_1.jsx)(LongHairBigHair_1.default, { children: children }), (0, jsx_runtime_1.jsx)(LongHairBob_1.default, { children: children }), (0, jsx_runtime_1.jsx)(LongHairBun_1.default, { children: children }), (0, jsx_runtime_1.jsx)(LongHairCurly_1.default, { children: children }), (0, jsx_runtime_1.jsx)(LongHairCurvy_1.default, { children: children }), (0, jsx_runtime_1.jsx)(LongHairDreads_1.default, { children: children }), (0, jsx_runtime_1.jsx)(LongHairFrida_1.default, { children: children }), (0, jsx_runtime_1.jsx)(LongHairFro_1.default, { children: children }), (0, jsx_runtime_1.jsx)(LongHairFroBand_1.default, { children: children }), (0, jsx_runtime_1.jsx)(LongHairNotTooLong_1.default, { children: children }), (0, jsx_runtime_1.jsx)(LongHairShavedSides_1.default, { children: children }), (0, jsx_runtime_1.jsx)(LongHairMiaWallace_1.default, { children: children }), (0, jsx_runtime_1.jsx)(LongHairStraight_1.default, { children: children }), (0, jsx_runtime_1.jsx)(LongHairStraight2_1.default, { children: children }), (0, jsx_runtime_1.jsx)(LongHairStraightStrand_1.default, { children: children }), (0, jsx_runtime_1.jsx)(ShortHairDreads01_1.default, { children: children }), (0, jsx_runtime_1.jsx)(ShortHairDreads02_1.default, { children: children }), (0, jsx_runtime_1.jsx)(ShortHairFrizzle_1.default, { children: children }), (0, jsx_runtime_1.jsx)(ShortHairShaggyMullet_1.default, { children: children }), (0, jsx_runtime_1.jsx)(ShortHairShortCurly_1.default, { children: children }), (0, jsx_runtime_1.jsx)(ShortHairShortFlat_1.default, { children: children }), (0, jsx_runtime_1.jsx)(ShortHairShortRound_1.default, { children: children }), (0, jsx_runtime_1.jsx)(ShortHairShortWaved_1.default, { children: children }), (0, jsx_runtime_1.jsx)(ShortHairSides_1.default, { children: children }), (0, jsx_runtime_1.jsx)(ShortHairTheCaesar_1.default, { children: children }), (0, jsx_runtime_1.jsx)(ShortHairTheCaesarSidePart_1.default, { children: children }), (0, jsx_runtime_1.jsx)(StudiosityTutorHat_1.default, { children: children })] }));
     };
     return Top;
 }(React.Component));

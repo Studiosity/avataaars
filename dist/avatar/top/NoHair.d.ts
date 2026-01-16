@@ -4,5 +4,5 @@ export default class NoHair extends React.Component<React.PropsWithChildren> {
     private filter1;
     private mask1;
     private path1;
-    render(): React.JSX.Element;
+    render(): import("react/jsx-runtime").JSX.Element;
 }

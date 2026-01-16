@@ -15,6 +15,7 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
+var jsx_runtime_1 = require("react/jsx-runtime");
 var React = require("react");
 var Serious = /** @class */ (function (_super) {
     __extends(Serious, _super);
@@ -22,8 +23,7 @@ var Serious = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     Serious.prototype.render = function () {
-        return (React.createElement("g", { id: 'Mouth/Serious', transform: 'translate(2.000000, 52.000000)', fill: '#000000', fillOpacity: '0.699999988' },
-            React.createElement("rect", { id: 'Why-so-serious?', x: '42', y: '18', width: '24', height: '6', rx: '3' })));
+        return ((0, jsx_runtime_1.jsx)("g", { id: 'Mouth/Serious', transform: 'translate(2.000000, 52.000000)', fill: '#000000', fillOpacity: '0.699999988', children: (0, jsx_runtime_1.jsx)("rect", { id: 'Why-so-serious?', x: '42', y: '18', width: '24', height: '6', rx: '3' }) }));
     };
     Serious.optionValue = 'Serious';
     return Serious;

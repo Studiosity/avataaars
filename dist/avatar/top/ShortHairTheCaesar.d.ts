@@ -6,5 +6,5 @@ export default class ShortHairTheCaesar extends React.Component<React.PropsWithC
     private mask2;
     private path1;
     private path2;
-    render(): React.JSX.Element;
+    render(): import("react/jsx-runtime").JSX.Element;
 }

@@ -7,5 +7,5 @@ export default class LongHairBigHair extends React.Component<React.PropsWithChil
     private path1;
     private path2;
     private path3;
-    render(): React.JSX.Element;
+    render(): import("react/jsx-runtime").JSX.Element;
 }

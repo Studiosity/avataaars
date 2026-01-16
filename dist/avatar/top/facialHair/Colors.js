@@ -15,6 +15,7 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
+var jsx_runtime_1 = require("react/jsx-runtime");
 var React = require("react");
 var options_1 = require("../../../options");
 function makeColor(name, color) {
@@ -24,9 +25,7 @@ function makeColor(name, color) {
             return _super !== null && _super.apply(this, arguments) || this;
         }
         ColorComponent.prototype.render = function () {
-            return (React.createElement("g", { id: 'Color/Hair/Brown', mask: "url(#".concat(this.props.maskID, ")"), fill: color },
-                React.createElement("g", { transform: 'translate(-32.000000, 0.000000)', id: 'Color' },
-                    React.createElement("rect", { x: '0', y: '0', width: '264', height: '244' }))));
+            return ((0, jsx_runtime_1.jsx)("g", { id: 'Color/Hair/Brown', mask: "url(#".concat(this.props.maskID, ")"), fill: color, children: (0, jsx_runtime_1.jsx)("g", { transform: 'translate(-32.000000, 0.000000)', id: 'Color', children: (0, jsx_runtime_1.jsx)("rect", { x: '0', y: '0', width: '264', height: '244' }) }) }));
         };
         return ColorComponent;
     }(React.Component));
@@ -50,16 +49,7 @@ var Colors = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     Colors.prototype.render = function () {
-        return (React.createElement(options_1.Selector, { option: options_1.FacialHairColor, defaultOption: BrownDark },
-            React.createElement(Auburn, { maskID: this.props.maskID }),
-            React.createElement(Black, { maskID: this.props.maskID }),
-            React.createElement(Blonde, { maskID: this.props.maskID }),
-            React.createElement(BlondeGolden, { maskID: this.props.maskID }),
-            React.createElement(Brown, { maskID: this.props.maskID }),
-            React.createElement(BrownDark, { maskID: this.props.maskID }),
-            React.createElement(Platinum, { maskID: this.props.maskID }),
-            React.createElement(Red, { maskID: this.props.maskID }),
-            React.createElement(SilverGray, { maskID: this.props.maskID })));
+        return ((0, jsx_runtime_1.jsxs)(options_1.Selector, { option: options_1.FacialHairColor, defaultOption: BrownDark, children: [(0, jsx_runtime_1.jsx)(Auburn, { maskID: this.props.maskID }), (0, jsx_runtime_1.jsx)(Black, { maskID: this.props.maskID }), (0, jsx_runtime_1.jsx)(Blonde, { maskID: this.props.maskID }), (0, jsx_runtime_1.jsx)(BlondeGolden, { maskID: this.props.maskID }), (0, jsx_runtime_1.jsx)(Brown, { maskID: this.props.maskID }), (0, jsx_runtime_1.jsx)(BrownDark, { maskID: this.props.maskID }), (0, jsx_runtime_1.jsx)(Platinum, { maskID: this.props.maskID }), (0, jsx_runtime_1.jsx)(Red, { maskID: this.props.maskID }), (0, jsx_runtime_1.jsx)(SilverGray, { maskID: this.props.maskID })] }));
     };
     return Colors;
 }(React.Component));

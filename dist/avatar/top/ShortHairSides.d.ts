@@ -6,5 +6,5 @@ export default class ShortHairSides extends React.Component<React.PropsWithChild
     private path1;
     private path2;
     private path3;
-    render(): React.JSX.Element;
+    render(): import("react/jsx-runtime").JSX.Element;
 }

@@ -15,6 +15,7 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
+var jsx_runtime_1 = require("react/jsx-runtime");
 var React = require("react");
 var Default = /** @class */ (function (_super) {
     __extends(Default, _super);
@@ -22,9 +23,7 @@ var Default = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     Default.prototype.render = function () {
-        return (React.createElement("g", { id: 'Eyes/Default-\uD83D\uDE00', transform: 'translate(0.000000, 8.000000)', fillOpacity: '0.599999964' },
-            React.createElement("circle", { id: 'Eye', cx: '30', cy: '22', r: '6' }),
-            React.createElement("circle", { id: 'Eye', cx: '82', cy: '22', r: '6' })));
+        return ((0, jsx_runtime_1.jsxs)("g", { id: 'Eyes/Default-\uD83D\uDE00', transform: 'translate(0.000000, 8.000000)', fillOpacity: '0.599999964', children: [(0, jsx_runtime_1.jsx)("circle", { id: 'Eye', cx: '30', cy: '22', r: '6' }), (0, jsx_runtime_1.jsx)("circle", { id: 'Eye', cx: '82', cy: '22', r: '6' })] }));
     };
     Default.optionValue = 'Default';
     return Default;

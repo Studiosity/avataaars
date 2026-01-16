@@ -15,6 +15,7 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
+var jsx_runtime_1 = require("react/jsx-runtime");
 var React = require("react");
 var BlazerShirt_1 = require("./BlazerShirt");
 var BlazerSweater_1 = require("./BlazerSweater");
@@ -32,16 +33,7 @@ var Clothes = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     Clothes.prototype.render = function () {
-        return (React.createElement(options_1.Selector, { option: options_1.ClotheOption, defaultOption: BlazerShirt_1.default },
-            React.createElement(BlazerShirt_1.default, null),
-            React.createElement(BlazerSweater_1.default, null),
-            React.createElement(CollarSweater_1.default, null),
-            React.createElement(GraphicShirt_1.default, null),
-            React.createElement(Hoodie_1.default, null),
-            React.createElement(Overall_1.default, null),
-            React.createElement(ShirtCrewNeck_1.default, null),
-            React.createElement(ShirtScoopNeck_1.default, null),
-            React.createElement(ShirtVNeck_1.default, null)));
+        return ((0, jsx_runtime_1.jsxs)(options_1.Selector, { option: options_1.ClotheOption, defaultOption: BlazerShirt_1.default, children: [(0, jsx_runtime_1.jsx)(BlazerShirt_1.default, {}), (0, jsx_runtime_1.jsx)(BlazerSweater_1.default, {}), (0, jsx_runtime_1.jsx)(CollarSweater_1.default, {}), (0, jsx_runtime_1.jsx)(GraphicShirt_1.default, {}), (0, jsx_runtime_1.jsx)(Hoodie_1.default, {}), (0, jsx_runtime_1.jsx)(Overall_1.default, {}), (0, jsx_runtime_1.jsx)(ShirtCrewNeck_1.default, {}), (0, jsx_runtime_1.jsx)(ShirtScoopNeck_1.default, {}), (0, jsx_runtime_1.jsx)(ShirtVNeck_1.default, {})] }));
     };
     return Clothes;
 }(React.Component));

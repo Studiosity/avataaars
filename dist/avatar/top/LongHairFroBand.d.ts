@@ -5,5 +5,5 @@ export default class LongHairFroBand extends React.Component<React.PropsWithChil
     private mask2;
     private path1;
     private path2;
-    render(): React.JSX.Element;
+    render(): import("react/jsx-runtime").JSX.Element;
 }

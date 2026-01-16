@@ -15,6 +15,7 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
+var jsx_runtime_1 = require("react/jsx-runtime");
 var React = require("react");
 var options_1 = require("../../options");
 function makeColor(name, color) {
@@ -24,8 +25,7 @@ function makeColor(name, color) {
             return _super !== null && _super.apply(this, arguments) || this;
         }
         ColorComponent.prototype.render = function () {
-            return (React.createElement("g", { id: 'Color/Palette/Gray-01', mask: "url(#".concat(this.props.maskID, ")"), fillRule: 'evenodd', fill: color },
-                React.createElement("rect", { id: '\uD83D\uDD8DColor', x: '0', y: '0', width: '264', height: '280' })));
+            return ((0, jsx_runtime_1.jsx)("g", { id: 'Color/Palette/Gray-01', mask: "url(#".concat(this.props.maskID, ")"), fillRule: 'evenodd', fill: color, children: (0, jsx_runtime_1.jsx)("rect", { id: '\uD83D\uDD8DColor', x: '0', y: '0', width: '264', height: '280' }) }));
         };
         return ColorComponent;
     }(React.Component));
@@ -55,22 +55,7 @@ var Colors = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     Colors.prototype.render = function () {
-        return (React.createElement(options_1.Selector, { option: options_1.HatColorOption, defaultOption: this.props.defaultColor || Gray01 },
-            React.createElement(Black, { maskID: this.props.maskID }),
-            React.createElement(Blue01, { maskID: this.props.maskID }),
-            React.createElement(Blue02, { maskID: this.props.maskID }),
-            React.createElement(Blue03, { maskID: this.props.maskID }),
-            React.createElement(Gray01, { maskID: this.props.maskID }),
-            React.createElement(Gray02, { maskID: this.props.maskID }),
-            React.createElement(Heather, { maskID: this.props.maskID }),
-            React.createElement(PastelBlue, { maskID: this.props.maskID }),
-            React.createElement(PastelGreen, { maskID: this.props.maskID }),
-            React.createElement(PastelOrange, { maskID: this.props.maskID }),
-            React.createElement(PastelRed, { maskID: this.props.maskID }),
-            React.createElement(PastelYellow, { maskID: this.props.maskID }),
-            React.createElement(Pink, { maskID: this.props.maskID }),
-            React.createElement(Red, { maskID: this.props.maskID }),
-            React.createElement(White, { maskID: this.props.maskID })));
+        return ((0, jsx_runtime_1.jsxs)(options_1.Selector, { option: options_1.HatColorOption, defaultOption: this.props.defaultColor || Gray01, children: [(0, jsx_runtime_1.jsx)(Black, { maskID: this.props.maskID }), (0, jsx_runtime_1.jsx)(Blue01, { maskID: this.props.maskID }), (0, jsx_runtime_1.jsx)(Blue02, { maskID: this.props.maskID }), (0, jsx_runtime_1.jsx)(Blue03, { maskID: this.props.maskID }), (0, jsx_runtime_1.jsx)(Gray01, { maskID: this.props.maskID }), (0, jsx_runtime_1.jsx)(Gray02, { maskID: this.props.maskID }), (0, jsx_runtime_1.jsx)(Heather, { maskID: this.props.maskID }), (0, jsx_runtime_1.jsx)(PastelBlue, { maskID: this.props.maskID }), (0, jsx_runtime_1.jsx)(PastelGreen, { maskID: this.props.maskID }), (0, jsx_runtime_1.jsx)(PastelOrange, { maskID: this.props.maskID }), (0, jsx_runtime_1.jsx)(PastelRed, { maskID: this.props.maskID }), (0, jsx_runtime_1.jsx)(PastelYellow, { maskID: this.props.maskID }), (0, jsx_runtime_1.jsx)(Pink, { maskID: this.props.maskID }), (0, jsx_runtime_1.jsx)(Red, { maskID: this.props.maskID }), (0, jsx_runtime_1.jsx)(White, { maskID: this.props.maskID })] }));
     };
     return Colors;
 }(React.Component));

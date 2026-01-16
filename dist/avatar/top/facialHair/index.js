@@ -15,6 +15,7 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
+var jsx_runtime_1 = require("react/jsx-runtime");
 var React = require("react");
 var BeardLight_1 = require("./BeardLight");
 var BeardMajestic_1 = require("./BeardMajestic");
@@ -29,13 +30,7 @@ var FacialHair = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     FacialHair.prototype.render = function () {
-        return (React.createElement(options_1.Selector, { option: options_1.FacialHairOption, defaultOption: Blank_1.default },
-            React.createElement(Blank_1.default, null),
-            React.createElement(BeardMedium_1.default, null),
-            React.createElement(BeardLight_1.default, null),
-            React.createElement(BeardMajestic_1.default, null),
-            React.createElement(MoustacheFancy_1.default, null),
-            React.createElement(MoustacheMagnum_1.default, null)));
+        return ((0, jsx_runtime_1.jsxs)(options_1.Selector, { option: options_1.FacialHairOption, defaultOption: Blank_1.default, children: [(0, jsx_runtime_1.jsx)(Blank_1.default, {}), (0, jsx_runtime_1.jsx)(BeardMedium_1.default, {}), (0, jsx_runtime_1.jsx)(BeardLight_1.default, {}), (0, jsx_runtime_1.jsx)(BeardMajestic_1.default, {}), (0, jsx_runtime_1.jsx)(MoustacheFancy_1.default, {}), (0, jsx_runtime_1.jsx)(MoustacheMagnum_1.default, {})] }));
     };
     return FacialHair;
 }(React.Component));
