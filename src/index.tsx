@@ -86,7 +86,6 @@ export class Piece extends React.Component<Props> {
 
   render () {
     const { avatarStyle, style, pieceType, pieceSize, viewBox } = this.props
-    return <PieceComponent avatarStyle={avatarStyle as AvatarStyle} style={style} pieceType={pieceType} pieceSize={pieceSize} viewBox={viewBox}/>
     return (
       <OptionContextProvider optionContext={this.optionContext}>
         <PieceComponent avatarStyle={avatarStyle as AvatarStyle} style={style} pieceType={pieceType} pieceSize={pieceSize} viewBox={viewBox} />

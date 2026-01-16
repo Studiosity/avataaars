@@ -88,7 +88,6 @@ var Piece = /** @class */ (function (_super) {
     };
     Piece.prototype.render = function () {
         var _a = this.props, avatarStyle = _a.avatarStyle, style = _a.style, pieceType = _a.pieceType, pieceSize = _a.pieceSize, viewBox = _a.viewBox;
-        return (0, jsx_runtime_1.jsx)(piece_1.default, { avatarStyle: avatarStyle, style: style, pieceType: pieceType, pieceSize: pieceSize, viewBox: viewBox });
         return ((0, jsx_runtime_1.jsx)(OptionContextProvider_1.OptionContextProvider, { optionContext: this.optionContext, children: (0, jsx_runtime_1.jsx)(piece_1.default, { avatarStyle: avatarStyle, style: style, pieceType: pieceType, pieceSize: pieceSize, viewBox: viewBox }) }));
     };
     Piece.prototype.updateOptionContext = function (props) {
