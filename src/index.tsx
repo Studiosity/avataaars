@@ -33,8 +33,9 @@ export interface Props {
 export default class AvatarComponent extends React.Component<Props> {
   private optionContext: OptionContext = new OptionContext(allOptions)
 
-  componentDidMount () {
-    this.updateOptionContext(this.props)
+  constructor (props: Props) {
+    super(props)
+    this.updateOptionContext(props)
   }
 
   componentDidUpdate (prevProps: Props) {
@@ -70,8 +71,9 @@ export default class AvatarComponent extends React.Component<Props> {
 export class Piece extends React.Component<Props> {
   private optionContext: OptionContext = new OptionContext(allOptions)
 
-  componentDidMount () {
-    this.updateOptionContext(this.props)
+  constructor (props: Props) {
+    super(props)
+    this.updateOptionContext(props)
   }
 
   componentDidUpdate (prevProps: Props) {

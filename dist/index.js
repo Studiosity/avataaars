@@ -31,14 +31,12 @@ Object.defineProperty(exports, "allOptions", { enumerable: true, get: function (
 var piece_1 = require("./avatar/piece");
 var AvatarComponent = /** @class */ (function (_super) {
     __extends(AvatarComponent, _super);
-    function AvatarComponent() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
+    function AvatarComponent(props) {
+        var _this = _super.call(this, props) || this;
         _this.optionContext = new options_1.OptionContext(options_1.allOptions);
+        _this.updateOptionContext(props);
         return _this;
     }
-    AvatarComponent.prototype.componentDidMount = function () {
-        this.updateOptionContext(this.props);
-    };
     AvatarComponent.prototype.componentDidUpdate = function (prevProps) {
         var _this = this;
         var hasChanged = options_1.allOptions.some(function (option) { return prevProps[option.key] !== _this.props[option.key]; }) ||
@@ -68,14 +66,12 @@ var AvatarComponent = /** @class */ (function (_super) {
 exports.default = AvatarComponent;
 var Piece = /** @class */ (function (_super) {
     __extends(Piece, _super);
-    function Piece() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
+    function Piece(props) {
+        var _this = _super.call(this, props) || this;
         _this.optionContext = new options_1.OptionContext(options_1.allOptions);
+        _this.updateOptionContext(props);
         return _this;
     }
-    Piece.prototype.componentDidMount = function () {
-        this.updateOptionContext(this.props);
-    };
     Piece.prototype.componentDidUpdate = function (prevProps) {
         var _this = this;
         var hasChanged = options_1.allOptions.some(function (option) { return prevProps[option.key] !== _this.props[option.key]; }) ||

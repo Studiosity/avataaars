@@ -23,15 +23,15 @@ export interface Props {
 }
 export default class AvatarComponent extends React.Component<Props> {
     private optionContext;
-    componentDidMount(): void;
+    constructor(props: Props);
     componentDidUpdate(prevProps: Props): void;
-    render(): import("react/jsx-runtime").JSX.Element;
+    render(): JSX.Element;
     private updateOptionContext;
 }
 export declare class Piece extends React.Component<Props> {
     private optionContext;
-    componentDidMount(): void;
+    constructor(props: Props);
     componentDidUpdate(prevProps: Props): void;
-    render(): import("react/jsx-runtime").JSX.Element;
+    render(): JSX.Element;
     private updateOptionContext;
 }
